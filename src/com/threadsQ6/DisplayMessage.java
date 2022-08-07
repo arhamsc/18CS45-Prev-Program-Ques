@@ -1,4 +1,4 @@
-
+package com.threadsQ6;
 //Question:
 //	Write a Java Program to create two threads, one thread displays "VTU" and other thread displays "Belagavi" 
 //	on the screen continuosly

@@ -4,7 +4,7 @@
   Then create the MyClass inside the directory with the first statement being the package names.*/
 // Name of the package must be same as the directory
 // under which this file is saved
-package myPackage;
+package com.pckgsQ1;//Package Name
 
 public class MyClass
 {

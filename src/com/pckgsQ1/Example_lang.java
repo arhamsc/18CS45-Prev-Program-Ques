@@ -1,3 +1,5 @@
+package com.pckgsQ1;//Package Name
+
 /*Explain packages and its types in Java with an example (or) Define a package and explain
 how to create user defined package with example and explain import command.*/
 

@@ -1,4 +1,5 @@
-import MyPack.*;
+package com.pckgsQ1;
+
 class TestBalance {
 public static void main(String args[]) {
 /* Because Balance is public, you may use Balance

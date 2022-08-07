@@ -1,4 +1,4 @@
-/* import 'MyClass' class from 'names' myPackage */
+package com.pckgsQ1;/* import 'MyClass' class from 'names' myPackage */
 import myPackage.MyClass;
 public class PrintName 
 {

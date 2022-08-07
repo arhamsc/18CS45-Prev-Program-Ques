@@ -1,4 +1,6 @@
+package com.eventQ1;
 /*1-Explain delegation event model with suitable example.*/
+
 /*Event handling is fundamental to Java programming because it is integral to the creation of applets and other types of GUI-based programs.As applets are event-driven programs that use a graphical user interface to interact with the user. Furthermore, any program that uses a graphical user interface, such as a Java application written for Windows, is event driven. Thus, you cannot write these types of programs without a solid command of event handling. Events are supported by a number of packages, including java.util, java.awt, and java.awt.event.
 The modern approach to handling events is based on the delegation event model, which defines standard and consistent mechanisms to generate and process events. Its concept is quite simple: a source generates an event and sends it to one or more listeners. In this scheme, the listener simply waits until it receives an event. Once an event is received, the listener processes the event and then returns. The advantage of this design is that the application logic that processes events is cleanly separated from the user interface logic that generates those events. A user interface element is able to “delegate” the processing of an event to a separate piece of code.
 In the delegation event model, listeners must register with a source in order to receive an event notification. This provides an important benefit: notifications are sent only to listeners that want to receive them. This is a more efficient way to handle events than the design used by the old Java 1.0 approach
@@ -39,35 +41,42 @@ The methods that receive and process events are defined in a set of interfaces f
 java.awt.event. For example, the MouseMotionListener interface defines two methods to
 receive notifications when the mouse is dragged or moved. Any object may receive and process
 one or both of these events if it provides an implementation of this interface.
-Example to demonstrate key eevent handlers*/
+Example to demonstrate key event handlers*/
 // Demonstrate the key event handlers.
+
 import java.awt.*;
 import java.awt.event.*;
 import java.applet.*;
+
 /*
 <applet code="SimpleKey" width=300 height=100>
 </applet>
 */
 public class SimpleKey extends Applet
-implements KeyListener {
-String msg = "";
-int X = 10, Y = 20; // output coordinates
-public void init() {
-addKeyListener(this);
-}
-public void keyPressed(KeyEvent ke) {
-showStatus("Key Down");
-}
-public void keyReleased(KeyEvent ke) {
-showStatus("Key Up");
-}
-public void keyTyped(KeyEvent ke) {
-msg += ke.getKeyChar();
-repaint();
-}
-// Display keystrokes.
-public void paint(Graphics g) {
-g.drawString(msg, X, Y);
-}
+        implements KeyListener {
+    String msg = "";
+    int X = 10, Y = 20; // output coordinates
+
+    public void init() {
+        addKeyListener(this);
+    }
+
+    public void keyPressed(KeyEvent ke) {
+        showStatus("Key Down");
+    }
+
+    public void keyReleased(KeyEvent ke) {
+        showStatus("Key Up");
+    }
+
+    public void keyTyped(KeyEvent ke) {
+        msg += ke.getKeyChar();
+        repaint();
+    }
+
+    // Display keystrokes.
+    public void paint(Graphics g) {
+        g.drawString(msg, X, Y);
+    }
 }
 /*Reference-Java: The Complete Reference, Seventh Edition*/
