@@ -40,6 +40,7 @@ public class Buttons implements ActionListener{
 
         frame.add(panel, BorderLayout.CENTER);
         frame.setSize(1000, 1000);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
     }
