@@ -1,4 +1,4 @@
-package com.ThreadsQ4;
+package com.threadsQ4;
 
 /*Implementing Runnable
 Runnable abstracts a unit of executable code. a thread can be constructed on any object that

@@ -1,4 +1,4 @@
-package com.ThreadsQ4;
+package com.threadsQ4;
 
 /*4- What is a Thread? Explain the two ways of creating a Thread in Java.*/
 /*A thread is a lightweight sub process, a smallest unit of processing. It is a separate path of execution. 
