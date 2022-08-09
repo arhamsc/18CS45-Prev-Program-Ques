@@ -1,3 +1,4 @@
+package com.threadsQ4;
 /*Extending Thread
 The second way to create a thread is to create a new class that extends Thread, and then to
 create an instance of that class. The extending class must override the run( ) method, which
@@ -7,13 +8,14 @@ thread. Here is the preceding program rewritten to extend Thread:*/
 // Create a second thread by extending Thread
 class NewThread1 extends Thread {
     NewThread1() {
-// Create a new, second thread
+        // Create a new, second thread
         super("Demo Thread");
         System.out.println("Child thread: " + this);
         start(); // Start the thread
     }
 
     // This is the entry point for the second thread.
+    @Override
     public void run() {
         try {
             for (int i = 5; i > 0; i--) {

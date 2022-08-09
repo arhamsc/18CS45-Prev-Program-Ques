@@ -9,11 +9,13 @@ a label does not respond to user input. It just displays output. The program use
 container to hold an instance of a JLabel. The label displays a short text message. */
 
 // A simple Swing application.
-package com.swingsQ7;
+package com.swingsQ6;
+
 import javax.swing.*;
+
 class SimpleSwingProg {
     SimpleSwingProg() {
-    // Create a new JFrame container.
+        // Create a new JFrame container.
         JFrame jfrm = new JFrame("A Simple Swing Application");
         // Give the frame an initial size.
         jfrm.setSize(275, 100);
@@ -26,11 +28,12 @@ class SimpleSwingProg {
         // Display the frame.
         jfrm.setVisible(true);
     }
+
     public static void main(String args[]) {
         // Create the frame on the event dispatching thread.
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-            new SimpleSwingProg();
+                new SimpleSwingProg();
             }
         });
     }

@@ -1,4 +1,4 @@
-package com.pckgsQ1;/* import 'MyClass' class from 'names' myPackage */
+package com.pckgsQ1;/* import 'MyClass' class from 'pckgsQ1' myPackage */
 //import myPackage.MyClass;
 
 import com.pckgsQ1.MyClass;

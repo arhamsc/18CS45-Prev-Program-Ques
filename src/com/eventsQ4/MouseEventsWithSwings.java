@@ -1,4 +1,4 @@
-package com.eventsQ6;
+package com.eventsQ4;
 
 import javax.swing.*;
 import java.awt.*;

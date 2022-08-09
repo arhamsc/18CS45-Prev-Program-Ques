@@ -12,22 +12,25 @@ import java.util.Date;
 import java.io.*; The star form may increase compilation time—especially if you import several large packages. the star form has absolutely no effect on the run-time performance or size of your classes
 eg-program*/
 package com.pckgsQ1; //Package Name
+
 /* Now, the Balance class, its constructor, and its
 show() method are public. This means that they can
 be used by non-subclass code outside their package.
 */
 public class Balance {
-String name;
-double bal;
-public Balance(String n, double b) {
-name = n;
-bal = b;
-}
-public void show() {
-if(bal>0)
-System.out.print("--> ");
-System.out.println(name + ": $" + bal);
-}
+    String name;
+    double bal;
+
+    public Balance(String n, double b) {
+        name = n;
+        bal = b;
+    }
+
+    public void show() {
+        if (bal > 0)
+            System.out.print("--> ");
+        System.out.println(name + ": $" + bal);
+    }
 }
 /*the Balance class is public. Also, its constructor and its show( ) method are public, too. This means that they can be accessed by any type of code outside the MyPack package
 here TestBalance imports MyPack and is then able to make use of the Balance class:*/
