@@ -1,3 +1,6 @@
+/*6. Write a swing program for displaying anyone of the options: apple, orange, mango, grapes,
+through the selection of combobox by clicking show button. */
+
 package com.swingsQ6;
 import javax.swing.JFrame;
 import javax.swing.JComboBox;    
