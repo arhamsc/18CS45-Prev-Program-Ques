@@ -1,5 +1,5 @@
 package com.threadsQ7;
-
+// Java program to demonstrate the use of wait() and notifyAll() method
 class myThread extends Thread {
  
     // Declaring sum variable and
