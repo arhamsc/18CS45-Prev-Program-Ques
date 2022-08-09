@@ -1,11 +1,6 @@
 package com.threadsQ7;
 // Java program to demonstrate the use of wait() and notifyAll() method
 class myThread extends Thread {
- 
-    // Declaring sum variable and
-    // initializing with zero
-    // as the current final sum
-    // as it is before iteration
     int sum = 0;
  
     // Method in helper class
@@ -42,11 +37,7 @@ class myThread extends Thread {
     }
 }
  
-// Class 2
-// Main class
 class WaitAndNotifyAll {
- 
-    // Main driver method
     public static void main(String[] args)
         throws InterruptedException
     {
